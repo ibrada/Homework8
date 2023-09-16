@@ -17,7 +17,6 @@ public class Main {
 
 // Task 2
 // Task 2.1
-        abc = new int[]{1, 2, 3};
         for (int index = 0; index < abc.length; index++) {
             if (index == abc.length - 1) {
                 System.out.println(abc[index]);
