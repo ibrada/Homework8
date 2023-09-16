@@ -81,15 +81,11 @@ public class Main {
                 System.out.println(abc[index] + 1);
                 break;
             }
-            {
-                if (abc[index] % 2 == 0) {
-                    System.out.print(abc[index] + ", ");
-                } else {
-                    System.out.print(abc[index] + 1 + ", ");
-                }
+            if (abc[index] % 2 == 0) {
+                System.out.print(abc[index] + ", ");
+            } else {
+                System.out.print(abc[index] + 1 + ", ");
             }
         }
-
-
     }
 }
