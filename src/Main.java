@@ -73,14 +73,24 @@ public class Main {
         }
 
 // Task 4
-        int[] arr = new int[]{1, 57, 2, 99, 566, 3, 5, 10};
-        for (int index = 0; index < arr.length; index++) {
-            if (arr[index] % 2 == 0) {
-                System.out.print(arr[index] + " ");
-            } else {
-                System.out.print(arr[index] + 1 + " ");
+        for (int index = 0; index < abc.length; index++) {
+            if (abc[index] % 2 == 0 && index == abc.length - 1) {
+                System.out.println(abc[index]);
+                break;
+            }
+            if (abc[index] % 2 != 0 && index == abc.length - 1) {
+                System.out.println(abc[index] + 1);
+                break;
+            }
+            {
+                if (abc[index] % 2 == 0) {
+                    System.out.print(abc[index] + ", ");
+                } else {
+                    System.out.print(abc[index] + 1 + ", ");
+                }
             }
         }
+
 
     }
 }
